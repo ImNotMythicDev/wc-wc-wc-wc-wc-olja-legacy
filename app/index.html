@@ -64,16 +64,16 @@ function f4() {
   b.textContent = mony;
   
   }else{
-     g -= 20;
+     g -= 20; 
+    if (g<1) {
+g=1;}
+}
     const p = document.getElementById("count");
   p.textContent = g-1;
   const b = document.getElementById("onc");
   b.textContent = mony;
   
   }
-  if (g<1) {
-g=1;
-}
 }
 function shop() {
   if (document.getElementById("shop-1").style.display==="none") {
