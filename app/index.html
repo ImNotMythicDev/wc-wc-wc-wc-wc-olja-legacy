@@ -22,13 +22,15 @@
   let mony = 0;
   let g = 2;
 function f2() {
-const elm1 = document.createElement("h1");
-elm1.textContent="Boban Kalamarko";
-  elm1.class="Bobans";
-document.body.appendChild(elm1);
+  const elm1 = document.createElement("h1");
+  elm1.textContent = "Boban Kalamarko";
+  elm1.classList.add("Bobans"); 
+  document.body.appendChild(elm1);
 }
 function clearRam() {
-document.querySelector("Bobans").remove();
+ 
+  const elements = document.querySelectorAll(".Bobans"); 
+  elements.forEach(el => el.remove());
 }
 function f1() {
   
